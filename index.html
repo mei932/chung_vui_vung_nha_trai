@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chung vui</title>
+
+    <style>
+      @font-face {
+        font-family: "Monsieur La Doulaise";
+        src: url("./asset/DancingScript-VariableFont_wght.ttf")
+          format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+            @keyframes shake {
+        0% { transform: translateX(0); }
+        20% { transform: translateX(-8px) rotate(-2deg);}
+        40% { transform: translateX(8px) rotate(2deg);}
+        60% { transform: translateX(-6px) rotate(-1deg);}
+        80% { transform: translateX(6px) rotate(1deg);}
+        100% { transform: translateX(0); }
+      }
+          @keyframes coin-move-tr {
+        0%, 100% { transform: translate(0, 0);}
+        50% { transform: translate(40px, -40px) scale(1.2);}
+      }
+      @keyframes coin-move-bl {
+        0%, 100% { transform: translate(0, 0);}
+        50% { transform: translate(-40px, 40px) scale(1.2);}
+      }
+      @keyframes coin-move-tl {
+        0%, 100% { transform: translate(0, 0);}
+        50% { transform: translate(-30px, -30px) scale(1.1);}
+      }
+      @keyframes coin-move-br {
+        0%, 100% { transform: translate(0, 0);}
+        50% { transform: translate(30px, 30px) scale(1.1);}
+      }
+      @keyframes coin-move-top {
+        0%, 100% { transform: translate(0, 0);}
+        50% { transform: translate(0, -40px) scale(1.15);}
+      }
+      @keyframes coin-move-bottom {
+        0%, 100% { transform: translate(0, 0);}
+        50% { transform: translate(0, 40px) scale(1.15);}
+      }
+      @keyframes coin-move-left {
+        0%, 100% { transform: translate(0, 0);}
+        50% { transform: translate(-40px, 0) scale(1.2);}
+      }
+      @keyframes coin-move-right {
+        0%, 100% { transform: translate(0, 0);}
+        50% { transform: translate(40px, 0) scale(1.2);}
+      }
+      .coin-move-tr {
+        animation: coin-move-tr 3s infinite ease-in-out;
+      }
+      .coin-move-bl {
+        animation: coin-move-bl 3.2s infinite ease-in-out;
+      }
+      .coin-move-tl {
+        animation: coin-move-tl 3.4s infinite ease-in-out;
+      }
+      .coin-move-br {
+        animation: coin-move-br 3.6s infinite ease-in-out;
+      }
+      .coin-move-top {
+        animation: coin-move-top 5.3s infinite ease-in-out;
+      }
+      .coin-move-bottom {
+        animation: coin-move-bottom 4.5s infinite ease-in-out;
+      }
+      .coin-move-left {
+        animation: coin-move-left 5.2s infinite ease-in-out;
+      }
+      .coin-move-right {
+        animation: coin-move-right 5.6s infinite ease-in-out;
+      }
+      .animate-shake {
+        animation: shake 0.5s infinite;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body style="font-family: &quot;Monsieur La Doulaise&quot;">
+    <div class=" w-full md:max-w-[800px] bg-[rgb(254,240,224)] mx-auto p-6 text-3xl">
+      <header class="text-center">
+        <div class="font-bold text-4xl">Văn Tiến & Thu Hường</div>
+        <div class="md:size-[600px]  mx-auto mt-10">
+          <img src="image/8936055650698.png" alt="" class="w-full" />
+        </div>
+        <div class="md:size-[600px] mx-auto rotate-180 md:-mt-[250px] -mt-[150px]">
+          <img src="/image/flowers.png" alt="" class="w-full" />
+        </div>
+        <div class="md:size-[150px] size-[100px]  mx-auto md:-mt-[150px]">
+          <img src="/image/double-happiness.png" alt="" class="w-full" />
+        </div>
+      </header>
+      <main class="mt-20">
+        <!-- ảnh cưới -->
+        <div>
+          <div class="md:size-[100px] size-[60px] md:mx-40  rotate-45 ">
+            <img src="/image/cherry-blossom.png" alt="" class="w-full" />
+          </div>
+          <div class="text-center -mt-[100px] font-bold text-red-700">
+            ALBUM ẢNH CƯỚI
+          </div>
+          <div class="md:size-[100px] size-[60px] md:mx-[470px] -mt-[40px] mx-[270px] rotate-6">
+            <img src="/image/cherry-blossom.png" alt="" class="w-full" />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 max-w-[400px] mx-auto mt-10">
+          <a href="/image/meomeo.jpeg" class="glightbox" data-gallery="album">
+            <img
+              src="/image/meomeo.jpeg"
+              class="w-full cursor-pointer rounded-xl"
+            />
+          </a>
+
+          <a href="/image/meomeo.jpeg" class="glightbox" data-gallery="album">
+            <img
+              src="/image/meomeo.jpeg"
+              class="w-full cursor-pointer rounded-xl"
+            />
+          </a>
+
+          <a href="/image/meomeo.jpeg" class="glightbox" data-gallery="album">
+            <img
+              src="/image/meomeo.jpeg"
+              class="w-full cursor-pointer rounded-xl"
+            />
+          </a>
+
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox relative"
+            data-gallery="album"
+          >
+            <img src="/image/meomeo.jpeg" class="w-full rounded-xl" />
+
+            <div
+              class="absolute inset-0 bg-black/60 flex items-center justify-center text-white text-3xl font-semibold rounded-xl"
+            >
+              +16
+            </div>
+          </a>
+          <!-- Các ảnh khác -->
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/flowers.png"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/meomeo.jpeg"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+          <a
+            href="/image/double-happiness.png"
+            class="glightbox"
+            data-gallery="album"
+          ></a>
+        </div>
+
+        <!-- Thông tin -->
+        <div class= "-mt-10">
+          <div class="size-[100px] md:mx-40 rotate-45 -mx-10">
+            <img src="/image/cherry-blossom.png" alt="" />
+          </div>
+          <div class="text-center -mt-[100px] font-bold text-red-700">
+            THÔNG TIN LỄ CƯỚI
+          </div>
+          <div class="size-[100px] md:mx-[470px] -mt-[40px] rotate-6 mx-[250px]">
+            <img src="/image/cherry-blossom.png" alt="" />
+          </div>
+         <div class="text-center  leading-relaxed font-['Times_New_Roman']"  >
+            <div class="max-w-[400px] text-center grid grid-cols-2 mx-auto text-sm">
+              <div>
+                <span>Ông/bà:</span><br />
+               <div class = "text-lg font-bold">
+                 <span>Đặng Văn Đạt</span><br />
+                <span>Phạn Thị Hằng</span><br />
+               </div>
+                <span>xóm Cát Thành, Phường Hồng Quang, Tỉnh Ninh Bình</span><br />
+              </div>
+              <div>
+                <span>Ông/bà:</span><br />
+               <div class = "text-lg font-bold">
+                 <span>Đặng Văn Đạt</span><br />
+                <span>Phạn Thị Hằng</span><br />
+               </div>
+                <span>xóm Cát Thành, Phường Hồng Quang, Tỉnh Ninh Bình</span><br />
+              </div>
+
+            </div>
+            <!-- Thông tin 2 giặc giời -->
+            <div class ="text-xl mt-5 text-red-700 font-['Monsieur_La_Doulaise']">
+                <span>TRÂN TRỌNG BÁO TIN LỄ THÀNH HÔN CỦA CHÚNG TÔI</span>
+            </div>
+            <div class="font-['Monsieur_La_Doulaise'] text-4xl mt-5 text-red-600">
+                <span>
+                    ĐẶNG VĂN TIẾN
+                </span><br />
+                 <span>
+                   &
+                </span> <br />
+                   LÊ THỊ THU HƯỜNG
+                </span>
+            </div>
+            <div class ="mt-6">
+            <span>TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC</span>
+            <span> </br>17h:00 10/01/2026</span>
+            <span></br> ÂM LỊCH</span>
+            </div>
+           <div class="text-xl bg-[rgb(225,196,144)]/50">
+              <span>TẠI NHÀ TRAI: XÓM CÁT THÀNH, HỒNG QUANG, NINH BÌNH</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- foooter -->
+       <footer class = "mt-20 text-center">
+        <img src="image/flower.png" alt="" class ="size-[200px] mx-auto" />
+        <img src="/image/cherry-blossom.png" alt="" class = "size-[80px] md:mx-[470px] mx-[250px] -mt-[150px] rotate-12 opacity-50" />
+        <div class="text-red-600 font-bold mt-20">
+          Hộp Mừng Cưới
+        </div>
+       <div class="flex justify-center">
+            <div
+            id = "lixi-box"
+              class="cursor-pointer  relative mt-6 w-[180px] h-[250px] rounded-xl bg-gradient-to-b from-red-700 to-red-800 shadow-lg overflow-visible hover:scale-105 transition-transform duration-300 animate-shake"
+              style="box-shadow: 0 0 60px 20px rgba(255,215,0,0.5);"
+            >
+                  <div class="rounded-full coin-move-tr absolute" style="width: 30px; height: 30px; top: 20px; right: -15px; z-index:2; background: rgb(251,191,36); border: 2px solid rgb(245,158,11);">
+                      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px] bg-yellow-200 border-2 border-yellow-500 rotate-45">
+                      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px] bg-yellow-200 border-2 border-yellow-500 rotate-45"></div>
+                      </div>
+                  </div>
+              <div class="rounded-full coin-move-bl absolute" style="width: 30px; height: 30px; bottom: 20px; left: -15px; z-index:2; background: rgb(251,191,36); border: 2px solid rgb(245,158,11);">
+                            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px] bg-yellow-200 border-2 border-yellow-500 rotate-45"></div>
+
+              </div>
+              <div class="rounded-full coin-move-tl absolute" style="width: 22px; height: 22px; top: -18px; left: 10px; z-index:2; background: rgb(251,191,36); border: 2px solid rgb(245,158,11);">
+                      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px] bg-yellow-200 border-2 border-yellow-500 rotate-45"></div>
+
+              </div>
+              <div class="rounded-full coin-move-br absolute" style="width: 22px; height: 22px; bottom: -18px; right: 10px; z-index:2; background: rgb(251,191,36); border: 2px solid rgb(245,158,11);">
+                      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px] bg-yellow-200 border-2 border-yellow-500 rotate-45"></div>
+
+              </div>
+              <div class="rounded-full coin-move-top absolute" style="width: 18px; height: 18px; top: -22px; left: 50%; transform: translateX(-50%); z-index:2; background: rgb(251,191,36); border: 2px solid rgb(245,158,11);"></div>
+              <div class="rounded-full coin-move-bottom absolute" style="width: 18px; height: 18px; bottom: -22px; left: 50%; transform: translateX(-50%); z-index:2; background: rgb(251,191,36); border: 2px solid rgb(245,158,11);"></div>
+              <div class="rounded-full coin-move-left absolute" style="width: 26px; height: 26px; left: -22px; top: 50%; transform: translateY(-50%); z-index:2; background: rgb(251,191,36); border: 2px solid rgb(245,158,11);">
+                      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px] bg-yellow-200 border-2 border-yellow-500 rotate-45"></div>
+
+              </div>
+              <div class="rounded-full coin-move-right absolute" style="width: 26px; height: 26px; right: -22px; top: 50%; transform: translateY(-50%); z-index:2; background: rgb(251,191,36); border: 2px solid rgb(245,158,11);">
+                      <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px] bg-yellow-200 border-2 border-yellow-500 rotate-45"></div>
+
+              </div>
+            <!-- Viền vàng -->
+              <div class="absolute inset-2 border border-yellow-400/60 rounded-lg"></div>
+
+              <!-- Chữ song hỷ -->
+              <div
+                class="absolute inset-0 flex items-center justify-center text-yellow-300 text-5xl font-bold"
+                style="font-family:'Times New Roman',serif"
+              >
+                囍
+              </div>
+            </div>
+            <div id="lixi-dialog" class="fixed inset-0 bg-black/40 flex items-center justify-center z-50 opacity-0 scale-95 pointer-events-none transition-all duration-300">
+              <div class="bg-white rounded-xl shadow-xl p-8 max-w-[90vw] w-[350px] text-center">
+                <div class="text-2xl font-bold mb-4 text-red-600">Chúc bạn may mắn lần sau!</div>
+                <div class="mb-6 font-['Times_New_Roman']">Không có QRcode đâu đến dự lễ đi bro</div>
+                 <button onclick="hideDialog()" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 font-['Times_New_Roman']">Đóng</button>
+              </div>
+            </div>
+          </div>
+          <div class ="text-xl mt-10">
+            Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!
+          </div>
+       </footer>
+    </div>
+    <script>
+      GLightbox({
+        touchNavigation: true,
+        loop: true,
+      });
+      function showDialog() {
+        const dialog = document.getElementById('lixi-dialog');
+        dialog.classList.remove('pointer-events-none', 'opacity-0', 'scale-95');
+        dialog.classList.add('opacity-100', 'scale-100');
+      }
+      function hideDialog() {
+        const dialog = document.getElementById('lixi-dialog');
+        dialog.classList.add('pointer-events-none', 'opacity-0', 'scale-95');
+        dialog.classList.remove('opacity-100', 'scale-100');
+      }
+      document.getElementById('lixi-box').onclick = showDialog;
+       document.addEventListener('DOMContentLoaded', function () {
+    const mainContent = document.querySelector('.w-full.md\\:max-w-\\[800px\\]');
+    if (mainContent) mainContent.style.display = 'none';
+
+    const btn = document.getElementById('open-invitation-btn');
+    btn.addEventListener('click', function () {
+      // Ẩn cover, hiện nội dung chính
+      document.getElementById('invitation-cover').classList.add('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        document.getElementById('invitation-cover').style.display = 'none';
+        if (mainContent) mainContent.style.display = '';
+      }, 700);
+    });
+  });
+    </script>
+  </body>
+  <div id="invitation-cover" class="fixed inset-0 z-50 flex items-center justify-center bg-pink-100 transition-all duration-700">
+  <div class="relative w-[90vw] max-w-xs sm:max-w-sm bg-white rounded-2xl shadow-2xl flex flex-col items-center p-6">
+    <div class="mt-8 text-center">
+      <div class="text-2xl font-serif text-red-700 font-semibold mb-2">Tiến & Hường</div>
+      <div class="text-pink-400 mb-2">──────── <span class="text-red-400">❦</span> ────────</div>
+      <div class="text-base text-red-500 mb-1">23 tháng 1, 2026</div>
+      <div class="text-sm text-gray-500 mb-4">Thân Mời</div>
+      <button id="open-invitation-btn" class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-full shadow font-semibold flex items-center gap-2 mx-auto transition-all duration-300">
+        <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2m18 0v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0-9 6-9-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Mở thiệp
+      </button>
+    </div>
+  </div>
+</div>
+</html>
